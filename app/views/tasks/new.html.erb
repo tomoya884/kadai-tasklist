@@ -1,13 +1,13 @@
-<h1>Task新規作成ページ</h1>
+<h1>タスク新規作成ページ</h1>
 
 <%= form_for(@task) do |f| %>
-  <%= f.label :content, 'Task Content' %>
+  <%= f.label :content, 'タスク内容' %>
   <%= f.text_field :content %>
 
-  <%= f.label :status, 'Task Status' %>
+  <%= f.label :status, 'タスクの進捗状態' %>
   <%= f.text_field :status %>
 
-  <%= f.submit 'Submit' %>
+  <%= f.submit 'タスク登録' %>
 <% end %>
 
-<%= link_to 'Show Task List一覧に戻る', tasks_path %>
+<%= link_to 'タスクリスト一覧を表示', tasks_path %>
